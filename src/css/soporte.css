@@ -1,0 +1,164 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contenedor {
+    background-color: #e3e9eb;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Animación de entrada */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilos de encabezados */
+  .contenedor h1, .contenedor h2 {
+    color: #333;
+    border-bottom: 2px solid #ff6f00;
+    padding-bottom: 5px;
+  }
+  
+  /* Estilos de la lista */
+  .contenedor ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contenedor ul li {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    position: relative;
+    background-color: #1fb0e9;
+    border: 1px solid #e6bc03;
+    border-radius: 5px;
+    animation: fadeInLi 1s ease-in-out;
+  }
+  
+  /* Animación de entrada para list items */
+  @keyframes fadeInLi {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .contenedor ul li:before {
+    content: "➜";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff6f00;
+  }
+  
+  /* Estilos de la sección de soporte */
+  .contenedor .row {
+    margin-top: 20px;
+  }
+  
+  /* Estilos de los integrantes del grupo */
+  .contenedor .integrante {
+    padding: 10px;
+    border: 2px solid #ff6f00;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    animation: pulseBorder 1s infinite alternate;
+  }
+  
+  /* Animación de bordes pulsantes */
+  @keyframes pulseBorder {
+    0% {
+      border-color: #ff0000;
+    }
+    100% {
+      border-color: #ff6f00;
+    }
+  }
+  
+  /* Estilos de los nombres de los integrantes */
+  .contenedor .integrante strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos de las redes sociales */
+  .contenedor ul.redes-sociales {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    animation: rotate 3s infinite linear;
+  }
+  
+  /* Animación de rotación */
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .contenedor .redes-sociales li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .contenedor .redes-sociales li:hover {
+    background-color: #ff6f00;
+  }
+  
+  /* Estilos para las etiquetas dentro del contenedor */
+  .contenedor p {
+    border-left: 3px solid #ff6f00;
+    padding-left: 10px;
+    margin-left: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    animation: fadeInP 1s ease-in-out;
+  }
+  
+  /* Animación de entrada para párrafos */
+  @keyframes fadeInP {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

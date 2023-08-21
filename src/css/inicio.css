@@ -1,0 +1,93 @@
+.contenedor {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .aparecer {
+    animation: aparecer 3s ease-in-out;
+  }
+  
+  .deslizar {
+    animation: deslizar 3s ease-in-out;
+  }
+  
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes deslizar {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  h1, h2, p {
+    color: #444444;
+    font-family: "Arial", sans-serif;
+    border-left: 8px solid #e74c3c;
+    padding-left: 15px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  h1 {
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    background-color: #3498db;
+    padding: 10px 15px;
+    color: #000000;
+    border-color: #2980b9;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .contenedor:hover {
+    transform: scale(1.05);
+    background-color: #f9f9f9;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  }
+  
+  h2:hover{
+    background-color: #e9ac06;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  p:hover {
+    background-color: #bbb7b0;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+  }
+  .importante{
+    color:red;
+    background-color: #c4bbbb;
+    text-align: center;
+  }
+ 
